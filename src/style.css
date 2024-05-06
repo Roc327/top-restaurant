@@ -2,6 +2,9 @@ header {
   background-color: #2b2b2b;
   height: 100px;
   align-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav {
@@ -14,6 +17,10 @@ body {
   margin: 0;
 }
 
+#content {
+  margin-top: 100px;
+}
+
 button {
   border: 0;
   border-radius: 10px;
@@ -22,4 +29,33 @@ button {
   background-color: #027357;
   color: white;
   font-size: 18px;
+}
+
+/*-------------------- JS added content --------------------*/
+
+#img-section {
+  display: flex;
+  background-color: #18332d;
+}
+
+#dinner-img {
+  width: 100%;
+  height: auto;
+}
+
+#info-section {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  height: 600px;
+  justify-items: center;
+  align-items: center;
+  background-color: #eeebe3;
+}
+
+.info-card {
+  border: solid 1px black;
+  border-radius: 8px;
+  height: 500px;
+  width: 400px;
+  background-color: #2b2b2b;
 }
