@@ -20,7 +20,7 @@ function infoSection() {
     const infoDiv = document.createElement('div');
     infoDiv.id = 'info-section';
 
-    const deliveryCardDiv = () {
+    const deliveryCardDiv = function () {
         const createdDiv = document.createElement('div');
         createdDiv.id = 'delivery-card';
         createdDiv.className = 'info-card';
@@ -45,7 +45,7 @@ function infoSection() {
 
     infoDiv.appendChild(deliveryCardDiv());
 
-    const menuCardDiv = () {
+    const menuCardDiv = function () {
         const createdDiv = document.createElement('div');
         createdDiv.id = 'menu-card';
         createdDiv.className = 'info-card';

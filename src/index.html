@@ -9,18 +9,17 @@
   <body>
     <header>
       <nav>
-        <button>Home</button>
-        <button>Menu</button>
-        <button>Order</button>
-        <button>Catering</button>
-        <button>Offers</button>
-        <button>Locations</button>
-        <button>About</button>
+        <button id="homeButton" onclick="buttonTest(this.id)">Home</button>
+        <button id="menuButton" onclick="buttonTest(this.id)">Menu</button>
+        <button id="orderButton" onclick="buttonTest(this.id)">Order</button>
+        <button id="cateringButton" onclick="buttonTest(this.id)">Catering</button>
+        <button id="locationsButton" onclick="buttonTest(this.id)">Locations</button>
+        <button id="aboutButton" onclick="buttonTest(this.id)">About</button>
       </nav>
     </header>
     <div id="content">
       <div id="img-section">
-        <img src="./dinner-2024.jpg" alt="Tasty dinner img" id="dinner-img">
+        <!--<img src="./dinner-2024.jpg" alt="Tasty dinner img" id="dinner-img">-->
       </div>
       <div id="info-section">
         <div class="info-card" id="delivery-card">
@@ -34,6 +33,15 @@
           <div class="card-button-container">
             <button class="card-button" id="menuButton">Menu</button>
           </div>
+        </div>
+      </div>
+      <div id="opinion-section">
+        <div id="opinion-head">
+          What people are saying!
+        </div>
+        <div id="opinion-reviews">
+          <div class="reviews"></div>
+          <div class="reviews"></div>
         </div>
       </div>
     </div>
