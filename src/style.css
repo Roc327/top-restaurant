@@ -36,7 +36,7 @@ button {
 #img-section {
   display: flex;
   background-color: #18332d;
-  background: url('./dinner-2024.jpg');
+  background: url("./dinner-2024.jpg");
   height: 489px; /* To be removed, only temp for setup */
 }
 
@@ -84,7 +84,9 @@ button {
 
 .reviews {
   border: 1px solid black;
+  border-radius: 8px;
   background-color: #eeebe3;
   height: 500px;
   width: 500px;
 }
+
