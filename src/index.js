@@ -33,6 +33,10 @@ function navButtonClick(buttonClicked) {
     } // end switch statement
 }
 
-function buttonTest(clickedId) {
-    alert(clickedId);
-}
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(btn => {
+   btn.addEventListener('click', event => {
+        alert( event.target.id );
+   });
+});
