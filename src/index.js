@@ -10,25 +10,28 @@ function navButtonClick(buttonClicked) {
     contentDiv.innerHTML = '';
 
     switch (buttonClicked) {
-        case 'home':
-            homeLoad();
+        case 'homeButton':
+            //homeLoad();
+            alert(buttonClicked);
+            window.location.reload(); //testing content reload after alert
             break;
-        case 'menu':
-            menuPageLoad();
+        case 'menuButton':
+            //menuPageLoad();
+            alert(buttonClicked);
             break;
-        case 'order':
-            menuPageLoad();
-        case 'catering':
+        case 'orderButton':
+            //menuPageLoad();
+            alert(buttonClicked);
+        case 'cateringButton':
             // blank page
             break;
-        case 'offers':
+        case 'locationsButton':
+            alert(buttonClicked);
             // blank page
             break;
-        case 'locations':
-            // blank page
-            break;
-        case 'about':
-            aboutPageLoad();
+        case 'aboutButton':
+            alert(buttonClicked);
+            //aboutPageLoad();
             break;
     } // end switch statement
 }
@@ -37,6 +40,6 @@ const buttons = document.querySelectorAll('button');
 
 buttons.forEach(btn => {
    btn.addEventListener('click', event => {
-        alert( event.target.id );
+        navButtonClick( event.target.id );
    });
 });
