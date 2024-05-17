@@ -66,6 +66,11 @@ button {
   background-color: white;
 }
 
+.card-text {
+  margin: 50px 20px 0 20px;
+  font-size: 40px;
+}
+
 .card-button-container {
   align-self: center;
   margin: 20px 0 20px 0;
@@ -92,6 +97,11 @@ button {
 }
 
 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: #eeebe3;
@@ -99,3 +109,15 @@ button {
   width: 500px;
 }
 
+.review-text {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.cust-name {
+  font-size: 24px;
+}
+
+.cust-location {
+  font-size: 24px;
+}
