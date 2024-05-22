@@ -114,6 +114,12 @@ button {
   font-size: 20px;
 }
 
+.cust-sig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cust-name {
   font-size: 24px;
 }
