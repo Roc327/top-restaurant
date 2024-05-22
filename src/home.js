@@ -41,6 +41,10 @@ function homeLoad(contentDiv) {
             button.className = 'card-button';
             button.id = 'deliverButton';
             button.innerHTML = 'Deliver';
+            button.addEventListener('click', event => {
+                console.log( `${event.target.id} was clicked!` );
+                // Added code to load deliver page
+            });
             buttonDiv.appendChild(button);
 
             createdDiv.appendChild(buttonDiv);
@@ -68,6 +72,10 @@ function homeLoad(contentDiv) {
             button.className = 'card-button';
             button.id = 'menuButton';
             button.innerHTML = 'Menu';
+            button.addEventListener('click', event => {
+                console.log( `${event.target.id} was clicked!` );
+                // Add code to load menu page
+            });
             buttonDiv.appendChild(button);
 
             createdDiv.appendChild(buttonDiv);

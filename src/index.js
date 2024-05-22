@@ -3,6 +3,13 @@ import {homeLoad} from './home.js';
 
 console.log("Hello");
 
+const buttons = document.querySelectorAll('button');
+buttons.forEach(btn => {
+    btn.addEventListener('click', event => {
+            navButtonClick( event.target.id );
+    });
+});
+
 const contentDiv = document.getElementById('content');
 homeLoad(contentDiv);
 
@@ -30,11 +37,3 @@ function navButtonClick(buttonClicked) {
             break;
     } // end switch statement
 }
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach(btn => {
-   btn.addEventListener('click', event => {
-        navButtonClick( event.target.id );
-   });
-});
