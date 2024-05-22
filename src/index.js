@@ -1,7 +1,10 @@
 import "./style.css";
-import {homeLoad} from './home2.js';
+import {homeLoad} from './home.js';
 
 console.log("Hello");
+
+const contentDiv = document.getElementById('content');
+homeLoad(contentDiv);
 
 function navButtonClick(buttonClicked) {
     // Clear page and handle which button was clicked
@@ -11,26 +14,18 @@ function navButtonClick(buttonClicked) {
 
     switch (buttonClicked) {
         case 'homeButton':
-            //homeLoad();
-            alert(buttonClicked);
-            window.location.reload(); //testing content reload after alert
+            homeLoad(contentDiv);
             break;
         case 'menuButton':
             //menuPageLoad();
-            alert(buttonClicked);
             break;
         case 'orderButton':
             //menuPageLoad();
-            alert(buttonClicked);
-        case 'cateringButton':
-            // blank page
             break;
         case 'locationsButton':
-            alert(buttonClicked);
             // blank page
             break;
         case 'aboutButton':
-            alert(buttonClicked);
             //aboutPageLoad();
             break;
     } // end switch statement
