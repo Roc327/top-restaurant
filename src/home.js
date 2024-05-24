@@ -1,4 +1,5 @@
 import DinnerImg from './dinner-2024.jpg';
+import { deliverPageLoad } from './deliver.js';
 
 function homeLoad(contentDiv) {
 
@@ -24,7 +25,7 @@ function homeLoad(contentDiv) {
         const infoCardsDiv = document.createElement('div');
         infoCardsDiv.id = 'info-cards';
 
-        const deliveryCardDiv = () => {
+        const deliveryCardDiv = (contentDiv) => {
             const createdDiv = document.createElement('div');
             createdDiv.id = 'delivery-card';
             createdDiv.className = 'info-card';
@@ -43,7 +44,8 @@ function homeLoad(contentDiv) {
             button.innerHTML = 'Deliver';
             button.addEventListener('click', event => {
                 console.log( `${event.target.id} was clicked!` );
-                // Added code to load deliver page
+                contentDiv.innerHTML = '';
+                deliverPageLoad(contentDiv);
             });
             buttonDiv.appendChild(button);
 
@@ -53,7 +55,7 @@ function homeLoad(contentDiv) {
         };
         
 
-        infoCardsDiv.appendChild(deliveryCardDiv());
+        infoCardsDiv.appendChild(deliveryCardDiv(contentDiv));
 
         function menuCardDiv() {
             const createdDiv = document.createElement('div');

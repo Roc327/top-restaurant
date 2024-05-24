@@ -1,5 +1,7 @@
 import "./style.css";
 import {homeLoad} from './home.js';
+import {deliverPageLoad} from './deliver.js';
+import { menuPageLoad } from "./menu.js";
 
 console.log("Hello");
 
