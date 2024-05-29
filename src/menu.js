@@ -6,11 +6,13 @@ function menuPageLoad(contentDiv) {
         const testDiv = document.createElement('div');
         testDiv.className = 'test';
         testDiv.innerHTML = 'Hello Menu!';
+        console.log('You are in "createTestFunc" in "menu.js"!');
 
         return testDiv;
     }
     containerDiv.appendChild(createTestFunc());
-    contentDiv.appendChild(containerDiv);
+    //contentDiv.appendChild(containerDiv);
+    return containerDiv;
 }
 
 export { menuPageLoad };

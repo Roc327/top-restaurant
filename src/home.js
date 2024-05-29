@@ -44,8 +44,8 @@ function homeLoad(contentDiv) {
             button.innerHTML = 'Deliver';
             button.addEventListener('click', event => {
                 console.log( `${event.target.id} was clicked!` );
-                contentDiv.innerHTML = '';
-                deliverPageLoad(contentDiv);
+                infoDiv.innerHTML = '';
+                deliverPageLoad(infoDiv);
             });
             buttonDiv.appendChild(button);
 
