@@ -1,7 +1,6 @@
 import "./style.css";
 import { homeLoad } from "./home.js";
-import { deliverPageLoad } from "./deliver.js";
-import { menuPageLoad } from "./menu.js";
+import { menuPageLoad } from "./menuPage.js";
 
 console.log("Hello");
 
@@ -39,4 +38,3 @@ function navButtonClick(buttonClicked) {
       break;
   } // end switch statement
 }
-
