@@ -1,6 +1,7 @@
 import "./style.css";
 import { homeLoad } from "./home.js";
 import { menuPageLoad } from "./menuPage.js";
+import { constructPageLoad } from "./constructPage.js";
 
 console.log("Hello");
 
@@ -28,13 +29,13 @@ function navButtonClick(buttonClicked) {
       menuPageLoad(contentDiv);
       break;
     case "orderButton":
-      //menuPageLoad();
+      constructPageLoad(contentDiv);
       break;
     case "locationsButton":
-      // blank page
+      constructPageLoad(contentDiv);
       break;
     case "aboutButton":
-      //aboutPageLoad();
+      constructPageLoad(contentDiv);
       break;
   } // end switch statement
 }
